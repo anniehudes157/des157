@@ -1,0 +1,44 @@
+html {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  /*background: linear-gradient(to bottom right, #91A8d0, #f7cac9);*/
+  background-image: url(../images/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+h1{
+  font-size: 2em;
+  border-left: solid white 5px;
+  padding-left: 20px;
+  margin-top: 5%;
+}
+
+img{
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+#home{
+  position: fixed;
+  text-decoration: none;
+  color: white;
+  left:1%;
+  bottom: 1%;
+}
+
+a:hover{
+  color: #7c66ba;
+}
+
+p {
+  font-size: 12px;
+  width:80%;
+  text-align: center;
+  padding 20px;
+  margin:auto;
+}

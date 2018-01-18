@@ -1,7 +1,7 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
   /*background: linear-gradient(to bottom right, #91A8d0, #f7cac9);*/
-  background-image: url(images/bg1.png);
+  background-image: url(../images/bg1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -29,17 +29,13 @@ header {
   float: left;
 }
 
-nav {
+section{
   color: white;
   background-color: rgba(255, 255, 255, 0);
-  margin-top: 10%;
-  margin-left: 10%;
   display: inline-block;
   float: left;
-}
-
-#studios {
-  margin-left: 40%;
+  margin-left: 30%;
+  margin-top: 10%;
 }
 
 #studios ol {
@@ -47,17 +43,13 @@ nav {
   list-style-type: decimal;
 }
 
-#projects {
-  float: right;
-}
-
 #project ul {
   width: 200px;
-  margin-left: 10%;
+  margin-left: 5%;
   list-style-type: square;
 }
 
-section h2 {
+nav h2 {
   background-color: rgba(255, 255, 255, 0);
   font-weight: 600;
   font-size: 40px;
@@ -81,7 +73,6 @@ footer {
   font-family: 'Josefin Sans', sans-serif;
   bottom: 1%;
   left: 1%;
-  background-color: rgba(219, 165, 164, .5);
 }
 
 footer li {
@@ -108,47 +99,51 @@ footer li a {
   border: none;
 }
 
-
 /*for Ipad*/
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   #mySketch {
     margin-top: 0%;
     margin-left: 0%;
   }
   nav {
-    margin-top: 42%;
+    margin-top: 200px;
     margin-left: 0%;
   }
   #studios {
-    margin-left: 20%;
+    margin-left: 100px;
   }
   #project {
     margin-left: 15%;
   }
 }
 
-
 /*For Phone*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 668px) {
   #mySketch {
     margin-top: 0%;
     margin-left: 0%;
   }
   nav {
+    font-size: 1em;
     margin-left: 0%;
   }
-  #studios {
-    margin-top: 70%;
-    margin-left: 18%;
+
+  section h2{
+    font-size: 2em;
   }
+
+  #studios {
+    margin-top: 80px;
+    margin-left: 5%;
+  }
+
   #project {
-    margin-top: 10%;
-    margin-left: 20%;
+    margin-left: 10%;
+    margin-top: 80px;
   }
 }
-
 
 /*temporary- for topic brainstorm page*/
 
