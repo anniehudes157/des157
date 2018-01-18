@@ -1,0 +1,163 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  /*background: linear-gradient(to bottom right, #91A8d0, #f7cac9);*/
+  background-image: url(images/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+header {
+  margin-top: 8%;
+}
+
+#name {
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 500%;
+  color: white;
+  font-weight: bold;
+  border-left: solid 10px;
+  border-color: rgba(255, 255, 255, 0.5);
+  padding-left: 40px;
+}
+
+#mySketch {
+  position: absolute;
+  margin-left: 30%;
+  margin-top: -180px;
+  float: left;
+}
+
+nav {
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 10%;
+  margin-left: 10%;
+  display: inline-block;
+  float: left;
+}
+
+#studios {
+  margin-left: 40%;
+}
+
+#studios ol {
+  padding-left: 15%;
+  list-style-type: decimal;
+}
+
+#projects {
+  float: right;
+}
+
+#project ul {
+  width: 200px;
+  margin-left: 10%;
+  list-style-type: square;
+}
+
+section h2 {
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: 600;
+  font-size: 40px;
+  color: #574687;
+}
+
+nav a {
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+nav li {
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+footer {
+  position: fixed;
+  font-family: 'Josefin Sans', sans-serif;
+  bottom: 1%;
+  left: 1%;
+  background-color: rgba(219, 165, 164, .5);
+}
+
+footer li {
+  display: inline-block;
+}
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: #7c66ba;
+}
+
+footer li a {
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 10pt;
+  color: white;
+  border-left: solid 1px white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#email {
+  border: none;
+}
+
+
+/*for Ipad*/
+
+@media only screen and (max-width: 800px) {
+  #mySketch {
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+  nav {
+    margin-top: 42%;
+    margin-left: 0%;
+  }
+  #studios {
+    margin-left: 20%;
+  }
+  #project {
+    margin-left: 15%;
+  }
+}
+
+
+/*For Phone*/
+
+@media only screen and (max-width: 600px) {
+  #mySketch {
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+  nav {
+    margin-left: 0%;
+  }
+  #studios {
+    margin-top: 70%;
+    margin-left: 18%;
+  }
+  #project {
+    margin-top: 10%;
+    margin-left: 20%;
+  }
+}
+
+
+/*temporary- for topic brainstorm page*/
+
+.topic-brainstorm {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  max-width: 100%;
+  text-align: center;
+  margin: auto;
+}
