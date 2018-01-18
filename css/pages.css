@@ -13,14 +13,14 @@ h1{
   font-size: 2em;
   border-left: solid white 5px;
   padding-left: 20px;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 img{
-  width: 80%;
+  width: 60%;
   text-align: center;
-  margin-left: 10%;
-  margin-top: 2%;
+  margin-left: 20%;
+  margin-top: 1%;
 }
 
 #home{
@@ -33,12 +33,4 @@ img{
 
 a:hover{
   color: #7c66ba;
-}
-
-p {
-  font-size: 12px;
-  width:80%;
-  text-align: center;
-  padding 20px;
-  margin:auto;
 }

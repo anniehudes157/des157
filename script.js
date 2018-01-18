@@ -87,6 +87,6 @@ function draw() {
       d = 0;
     }
   }
-  var s = "C L I C K   A N D   H O L D";
+  var s = "C L I C K   A N D   D R A G";
   text(s, 20, 230);
 }
