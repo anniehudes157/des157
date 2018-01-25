@@ -29,7 +29,7 @@ header {
   float: left;
 }
 
-section{
+section {
   color: white;
   background-color: rgba(255, 255, 255, 0);
   display: inline-block;
@@ -70,7 +70,6 @@ nav li {
 
 footer {
   position: fixed;
-  font-family: 'Josefin Sans', sans-serif;
   bottom: 1%;
   left: 1%;
 }
@@ -129,16 +128,13 @@ footer li a {
     font-size: 1em;
     margin-left: 0%;
   }
-
-  section h2{
+  section h2 {
     font-size: 2em;
   }
-
   #studios {
     margin-top: 80px;
     margin-left: 5%;
   }
-
   #project {
     margin-left: 10%;
     margin-top: 80px;
