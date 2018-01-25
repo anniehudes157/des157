@@ -46,12 +46,27 @@ h2{
   color: #4f398c;
 }
 
+section{
+  padding-bottom: 40px;
+}
+
 section p{
   width: 65%;
   text-align: left;
   margin: auto;
   padding-top: 30px;
   color: #3d3d3d;
+  padding-bottom: 30px;
+}
+
+section a {
+  text-decoration: none;
+  color: #91A8d0;
+  margin-left: 18%;
+}
+
+section a:hover{
+  color: #7c66ba;
 }
 
 img{
