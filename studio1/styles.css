@@ -9,6 +9,7 @@ body {
 }
 
 /*changes form styles */
+
 article img {
   margin-top: 2%;
 }
@@ -23,7 +24,7 @@ article {
   margin-top: 1%;
 }
 
-article h2{
+article h2 {
   font-family: 'EB Garamond', serif;
   color: #93680b;
   font-size: 20px;
@@ -40,7 +41,7 @@ label {
   padding: 20px;
 }
 
-input[type="submit"], [type="reset"]{
+input[type="submit"], [type="reset"] {
   font-family: 'EB Garamond', serif;
   color: #f9edd6;
   text-align: left;
@@ -65,6 +66,7 @@ div {
 }
 
 /*changes result screen styles*/
+
 section h2 {
   font-family: 'Cinzel Decorative', cursive;
   font-size: 15px;
@@ -74,6 +76,7 @@ section h2 {
 }
 
 /*changes output style on the right side*/
+
 #results {
   position: absolute;
   font-size: 80%;
@@ -84,7 +87,6 @@ section h2 {
   font-family: 'EB Garamond', serif;
   line-height: 20px;
   padding: 20px;
-  overflow: scroll;
 }
 
 #opening {
@@ -95,7 +97,6 @@ section h2 {
   font-family: 'Cinzel Decorative', cursive;
   font-size: 15px;
   line-height: 25px;
-
 }
 
 /*adjusts footer styles*/
@@ -120,6 +121,7 @@ footer a:hover {
 }
 
 /*adds border between two links*/
+
 #css {
   border-left: solid #93680b 1px;
   padding-left: 10px;
