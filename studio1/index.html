@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad Lib 2.0 - Hogwarts Acceptance Letter</title>
+  <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|EB+Garamond" rel="stylesheet">
+  <link href="../studio1/styles.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="../images/harryp.png" alt="Are you ready to enter the World of Magic?" width="400">
+  </header>
+
+<article>
+  <h2>Fill out the following to find your true calling:</h2>
+  <form name="f">
+    <div>
+      <label for="userName">Name</label>
+      <input type="text" id="userName" required>
+    </div>
+    <div>
+      <label for="noun1">Object (Plural)</label>
+      <input type="text" id="noun1" required>
+    </div>
+    <div>
+      <label for="noun2">Object (Plural)</label>
+      <input type="text" id="noun2" required>
+    </div>
+    <div>
+      <label for="number1">Number</label>
+      <input type="text" id="number1" required>
+    </div>
+    <div>
+      <label for="date1">Date</label>
+      <input type="text" id="date1" required>
+    </div>
+    <div>
+      <label for="stationName">Mythical creature</label>
+      <input type="text" id="stationName" required>
+    </div>
+    <div>
+      <label for="number2">Number</label>
+      <input type="text" id="number2" required>
+    </div>
+    <div>
+      <label for="fraction">Fraction</label>
+      <input type="text" id="fraction" required>
+    </div>
+    <div>
+      <label for="noun3">Noun</label>
+      <input type="text" id="noun3" required>
+    </div>
+    <div>
+      <label for="number3">Number</label>
+      <input type="text" id="number3" required>
+    </div>
+    <div>
+      <label for="measurementTime">Measurement of Time</label>
+      <input type="text" id="measurementTime" required>
+    </div>
+    <div>
+      <input type="reset" value="I am a Muggle" />
+      <input type="submit" value="Magic Awaits" />
+    </div>
+
+  </form>
+</article>
+
+<section id="results">
+  <h2>The magic is waiting for you.</h2>
+  <p id="opening"></p>
+  <p id="letterContent"></p>
+  <p id= "closing"></p>
+</section>
+<!--validation-->
+<footer>
+  <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+  <a href="https://jigsaw.w3.org/css-validator/check/referer" id="css">Valid CSS</a>
+</footer>
+
+<script src="../studio1/script.js"></script>
+</body>
+</html>
