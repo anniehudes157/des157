@@ -28,23 +28,32 @@ function processForm() {
   var fraction = document.f.fraction.value;
   var measurementTime = document.f.measurementTime.value;
 
+  //loads background with letter after pressing submit
+  document.body.style.backgroundImage = "url('images/studio1-bg2.jpg')";
+
+  //writes letter based on input
   opening.innerHTML = "Dear " + userName + ",";
 
   letterContent.innerHTML = "We are pleased to inform you that you have been accepted to Hogwarts School of Witchcraft and Wizardry.<br> <br>Enclosed is a list of equipments, including " + noun1 +
     " and " + noun2 + ",which will be required for your courses. All items of the supply list can be purchased at Diagon Valley, totaling at " + number1 +
-    "galleons. We await your arrival at Hogwarts School of Witchcraft and Wizardry no later than " + date1 +
-    ".<br>  <br>To enter, please use the enclosed travel ticket and make your way to the " + stationName +
-    "Station and enter through Platform " + number2 + " " + fraction + " to take the Hogwarts Express.<br> <br>Students shall be required to report to the Chamber of " + noun3 +
+    " galleons. We await your arrival at Hogwarts School of Witchcraft and Wizardry no later than " + date1 +
+    ".<br>  <br>To get to school, please use the enclosed travel ticket and make your way to the " + stationName +
+    "Station, entering through Platform " + number2 + " " + fraction + " to take the Hogwarts Express.<br> <br>Students shall be required to report to the Chamber of " + noun3 +
     " upon arrival. Your term will begin " + number3 + " " + measurementTime + " after your arrival. We look forward to to receiving you as part of the new generation of Hogwarts Heritage.<br>";
 
   closing.innerHTML = "Yours Sincerely, <br> <strong>Minerva McGonagall</strong><br> Deputy Headmistress";
 
+  //stops from reloading;
   return false;
+
 }
 
 console.log("resetting");
 
 function resetForm() {
+  opening.innerHTML = "";
   letterContent.innerHTML = "";
-  //only hide the results when reseting the form, but show the default flag
+  closing.innerHTML = ";"
+  document.body.style.backgroundImage = "url('images/studio1-bg.jpg')";
+  //returns to empty form
 }
