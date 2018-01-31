@@ -28,8 +28,8 @@ function processForm() {
   var fraction = document.f.fraction.value;
   var measurementTime = document.f.measurementTime.value;
 
-  //loads background with letter after pressing submit
-  document.body.style.backgroundImage = "url('images/studio1-bg2.jpg')";
+
+  document.body.style.backgroundImage = "url('../images/studio1-bg2.jpg')"; //changes background to invitation letter
 
   //writes letter based on input
   opening.innerHTML = "Dear " + userName + ",";
@@ -53,7 +53,7 @@ console.log("resetting");
 function resetForm() {
   opening.innerHTML = "";
   letterContent.innerHTML = "";
-  closing.innerHTML = ";"
-  document.body.style.backgroundImage = "url('images/studio1-bg.jpg')";
-  //returns to empty form
+  closing.innerHTML = "";
+  document.body.style.backgroundImage = "url('../images/studio1-bg.jpg')"
+  //resets to empty form
 }

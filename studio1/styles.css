@@ -1,22 +1,27 @@
 body {
   font-family: 'EB Garamond', serif;
   color: #93680b;
-  background-image: url(images/studio1-bg.jpg);
+  background-image: url(../images/studio1-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: local;
   background-position: center center;
 }
 
-header img {
-  margin: 1% 3% 0% 3%;
+/*changes form styles */
+
+article img {
+  margin-top: 2%;
 }
 
 article {
   float: left;
-  margin-left: 5%;
-  border-right: solid #b79d63 0.5px;
+  padding-left: 5%;
   padding-right: 5%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-left: 2%;
+  margin-right: 5%;
+  margin-top: 1%;
 }
 
 article h2 {
@@ -24,10 +29,6 @@ article h2 {
   color: #93680b;
   font-size: 20px;
   font-weight: bold;
-}
-
-section h2 {
-  display: none;
 }
 
 form {
@@ -52,6 +53,12 @@ input[type="submit"], [type="reset"] {
   margin: 20px;
 }
 
+input[type="submit"]:hover, [type="reset"]:hover {
+  background-color: #f9edd6;
+  color: #8c6e3a;
+}
+
+
 input[type="text"] {
   background-color: #fcf4e0;
   color: #776a4a;
@@ -64,18 +71,21 @@ div {
   padding: 5px;
 }
 
-#letterBackground {
-  position: absolute;
-  right: 2%;
-  top: 10%;
-  width: 600px;
+/*changes result screen styles*/
+
+section h2 {
+  display: none;
 }
 
+/*changes output style on the right side*/
+
 #results {
+  position: absolute;
+  font-size: 80%;
   float: right;
-  margin-right: 10%;
-  margin-top: -100px;
-  width: 500px;
+  margin: 160px 1% 0.5% 57%;
+  max-width: 350px;
+  max-height: 425px;
   font-family: 'EB Garamond', serif;
   line-height: 20px;
   padding: 20px;
@@ -90,6 +100,8 @@ div {
   font-size: 15px;
   line-height: 25px;
 }
+
+/*adjusts footer styles*/
 
 footer {
   position: fixed;
@@ -106,11 +118,13 @@ footer a {
   padding-right: 10px;
 }
 
+footer a:hover {
+  color: white;
+}
+
+/*adds border between two links*/
+
 #css {
   border-left: solid #93680b 1px;
   padding-left: 10px;
-}
-
-footer a:hover {
-  color: white;
 }
