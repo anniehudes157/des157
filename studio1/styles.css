@@ -4,7 +4,7 @@ body {
   background-image: url(../images/studio1-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: local;
+  background-attachment: fixed;
   background-position: center center;
 }
 
@@ -57,7 +57,6 @@ input[type="submit"]:hover, [type="reset"]:hover {
   background-color: #f9edd6;
   color: #8c6e3a;
 }
-
 
 input[type="text"] {
   background-color: #fcf4e0;
