@@ -76,15 +76,15 @@ section h2 {
   display: none;
 }
 
-/*changes output style on the right side*/
+section {
+  float: left;
+  margin-left: 58%;
+  margin-top: -400px;
+}
 
 #results {
-  position: absolute;
   font-size: 80%;
-  float: right;
-  margin: 160px 1% 0.5% 57%;
-  max-width: 350px;
-  max-height: 425px;
+  width: 30%;
   font-family: 'EB Garamond', serif;
   line-height: 20px;
   padding: 20px;

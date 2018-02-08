@@ -28,7 +28,6 @@ function processForm() {
   var fraction = document.f.fraction.value;
   var measurementTime = document.f.measurementTime.value;
 
-
   document.body.style.backgroundImage = "url('../images/studio1-bg2.jpg')"; //changes background to invitation letter
 
   //writes letter based on input

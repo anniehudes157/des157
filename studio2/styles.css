@@ -1,0 +1,174 @@
+body {
+  background: url(images/background.jpg) no-repeat fixed center;
+  background-size: cover;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*positions beginning screen to adjust with window size*/
+
+header img {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 80%;
+  transform: translateY(-50%);
+  cursor: url('images/arrow.png') 4 12, auto;
+  /*allows arrow to appear when hovered over museum image*/
+}
+
+header img:hover {
+  filter: drop-shadow(3px 3px 0 white) drop-shadow(-3px 3px 0 white) drop-shadow(3px -3px 0 white) drop-shadow(-3px -3px 0 white);
+}
+
+/*positioning of treasure chests*/
+
+#chests {
+  padding-top: 10%;
+}
+
+#chests li img {
+  display: none;
+  padding-top: 15%;
+  padding-left: 30%;
+}
+
+#closedChest1, #closedChest2, #closedChest3 {
+  max-width: 50%;
+  cursor: url('images/key.png') 4 12, auto;
+}
+
+#openChest1, #openChest2, #openChest3 {
+  max-width: 60%;
+}
+
+/*this creates border around item when hovered over*/
+
+#closedChest1:hover, #closedChest2:hover, #closedChest3:hover {
+  filter: drop-shadow(3px 3px 0 white) drop-shadow(-3px 3px 0 white) drop-shadow(3px -3px 0 white) drop-shadow(-3px -3px 0 white);
+}
+
+/*positioning of the items*/
+
+#tannie {
+  position: absolute;
+  max-width: 70px;
+  left: 95px;
+}
+
+#polaroid {
+  position: absolute;
+  max-width: 60px;
+  left: 95px;
+}
+
+#frog {
+  position: absolute;
+  max-width: 50px;
+  left: 95px;
+}
+
+#tannie, #polaroid, #frog {
+  margin-top: -60%;
+}
+
+/*this creates a border around the items when hovered over*/
+
+#tannie:hover, #polaroid:hover, #frog:hover {
+  filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px 1px 0 white) drop-shadow(1px -1px 0 white) drop-shadow(-1px -1px 0 white);
+}
+
+/*positioning of the close button*/
+
+#close1, #close2, #close3 {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 50px;
+}
+
+/*positioning of the overlay descriptions*/
+
+#tannieStory, #polaroidStory, #frogStory {
+  display: none;
+  position: absolute;
+  left: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  padding-right: 40px;
+  width: 35%;
+  margin-bottom: 5%;
+  border-radius: 15px;
+}
+
+#tannieStory {
+  top: 10%;
+}
+
+#polaroidStory {
+  top: 30%;
+}
+
+#frogStory {
+  bottom: 25%;
+}
+
+/*this allows footer to stay fixed at the bottom*/
+
+footer {
+  position: fixed;
+  background: white;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  bottom: 0;
+}
+
+footer a {
+  color: #ff9191;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+footer a:first-child {
+  padding-right: 10px;
+  border-right: solid #ff9191 1px;
+}
+
+footer a:hover {
+  color: #ffaaaa;
+}
+
+
+@media only screen and (min-width:768px) {
+  /*for desktop*/
+  nav ul li img {
+    display: inline-block;
+    margin-top: -10%;
+    margin-left: 10%;
+  }
+
+  #chests {
+    padding: 0;
+  }
+  #chest1, #chest2, #chest3 {
+    padding: 0;
+    margin-top: 0;
+    margin-left: -5%;
+  }
+  #tannie, #polaroid, #frog {
+    margin-top: -28%;
+}
+  #tannieStory, #polaroidStory, #frogStory {
+    width: 20%;
+    margin-left: 10%;
+  }
+  #frogStory {
+    bottom: 15%;
+  }
+}
