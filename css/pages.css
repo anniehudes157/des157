@@ -46,11 +46,11 @@ h2 {
   color: #4f398c;
 }
 
-section {
+section, article {
   padding-bottom: 40px;
 }
 
-section p {
+section p, article p, ul li {
   width: 65%;
   text-align: left;
   margin: auto;
@@ -59,7 +59,10 @@ section p {
   padding-bottom: 30px;
 }
 
-section a {
+ul li {
+  list-style-type: none;
+}
+section a, article a {
   text-decoration: none;
   color: #91A8d0;
   margin-left: 18%;
