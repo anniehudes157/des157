@@ -1,3 +1,4 @@
+/*styling for ALL pages*/
 html {
   font-family: 'Josefin Sans', sans-serif;
   color: white;
@@ -62,6 +63,7 @@ section p, article p, ul li {
 ul li {
   list-style-type: none;
 }
+
 section a, article a {
   text-decoration: none;
   color: #91A8d0;
@@ -83,4 +85,60 @@ img {
   font-style: italic;
   text-align: center;
   padding: 5px;
+}
+
+/*audience*/
+
+article h3 {
+  margin-left: 17%;
+  font-size: 20px;
+  border-bottom: solid 1px;
+  color: #7a56bc;
+  width: 60%;
+}
+
+#name {
+  margin-left: 20%;
+}
+
+#profile {
+  width:200px;
+  float: left;
+  margin-left: 20%;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 8px;
+}
+
+article ul li {
+  padding:5px;
+  line-height: 15px;
+}
+
+article ul li strong {
+  color: #7a56bc;
+}
+
+#general {
+  margin-bottom: 2%;
+}
+
+#general h3 {
+  margin-left: 20%;
+  width: 55%;
+}
+
+#general li {
+  width: 50%;
+}
+
+#general li:last-child {
+  line-height: 20px;
+}
+
+article p{
+  width: 80%;
+  margin-left: 0%;
+  line-height: 20px;
+  padding: 0;
 }
