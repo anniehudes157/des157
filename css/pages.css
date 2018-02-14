@@ -47,12 +47,12 @@ h2 {
   color: #4f398c;
 }
 
-section, article {
+.website, #research{
   padding-bottom: 40px;
 }
 
-section p, article p, ul li {
-  width: 65%;
+.website p, #research p, ul li {
+  width: 60%;
   text-align: left;
   margin: auto;
   padding-top: 30px;
@@ -64,13 +64,13 @@ ul li {
   list-style-type: none;
 }
 
-section a, article a {
+.website a, #research a {
   text-decoration: none;
   color: #91A8d0;
   margin-left: 18%;
 }
 
-section a:hover {
+.website a:hover{
   color: #7c66ba;
 }
 
@@ -89,7 +89,7 @@ img {
 
 /*audience*/
 
-article h3 {
+#audience h3 {
   margin-left: 20%;
   font-size: 20px;
   border-bottom: solid 1px;
@@ -110,12 +110,12 @@ article h3 {
   padding-top: 8px;
 }
 
-article ul li {
+#audience ul li {
   padding:5px;
   line-height: 15px;
 }
 
-article ul li strong {
+#audience ul li strong {
   color: #7a56bc;
 }
 
@@ -136,7 +136,7 @@ article ul li strong {
   line-height: 20px;
 }
 
-article p{
+#audience p{
   width: 80%;
   margin-left: 0%;
   line-height: 20px;
