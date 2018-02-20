@@ -1,0 +1,39 @@
+html {
+  font-family: 'Play', sans-serif;
+}
+
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+#mySketch {
+  width: 1000px;
+  margin: auto;
+}
+
+footer{
+  position: fixed;
+  bottom: 1%;
+  left: 1%;
+}
+
+footer a {
+  display: inline;
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover{
+  color: grey;
+}
