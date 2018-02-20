@@ -36,6 +36,7 @@ section {
   float: left;
   margin-left: 30%;
   margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 #studios ol {
@@ -104,6 +105,9 @@ footer li a {
     margin-top: 0%;
     margin-left: 0%;
   }
+  section {
+    margin-bottom: 10%;
+  }
   nav {
     margin-top: 200px;
     margin-left: 0%;
@@ -126,6 +130,9 @@ footer li a {
   nav {
     font-size: 1em;
     margin-left: 0%;
+  }
+  section {
+    margin-bottom: 15%;
   }
   section h2 {
     font-size: 2em;
