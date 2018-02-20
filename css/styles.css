@@ -70,8 +70,12 @@ nav li {
 
 footer {
   position: fixed;
-  bottom: 1%;
-  left: 1%;
+  bottom: 0%;
+  left: 0%;
+  padding: 10px;
+  width: 100%;
+  background: rgba(255,255,255, 0.7);
+  color: #7b8ac4;
 }
 
 footer li {
@@ -80,7 +84,7 @@ footer li {
 
 a:hover {
   background-color: rgba(255, 255, 255, 0);
-  color: #7c66ba;
+  color: #574687;
 }
 
 footer li a {
@@ -88,15 +92,10 @@ footer li a {
   text-decoration: none;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 10pt;
-  color: white;
-  border-left: solid 1px white;
-  padding-left: 10px;
+  color: #7b8ac4;
   padding-right: 10px;
 }
 
-#email {
-  border: none;
-}
 
 /*for Ipad*/
 
