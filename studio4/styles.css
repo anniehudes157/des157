@@ -1,28 +1,68 @@
 html {
   font-family: 'Play', sans-serif;
+  width: 100%;
 }
 
-
-h1 {
-  font-size: 30px;
+h1, h2 {
+  color: white;
+  width: 500px;
+  margin: auto;
   text-align: center;
+  margin-top: 1%;
+  font-size: 20px;
+  position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
 }
 
 h2 {
-  font-size: 20px;
-  text-align: center;
+  font-size: 15px;
+  top: 50%;
 }
 
 ul li {
   list-style-type: none;
 }
 
+#intro {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: deeppink;
+  display: block;
+}
+
+#game {
+  margin-top: 2%;
+}
 #mySketch {
   width: 1000px;
   margin: auto;
 }
 
-footer{
+#buttons {
+  width: 250px;
+  margin: auto;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  background: #38393a;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #626466;
+}
+
+footer {
   position: fixed;
   bottom: 1%;
   left: 1%;
@@ -34,6 +74,6 @@ footer a {
   color: black;
 }
 
-footer a:hover{
+footer a:hover {
   color: grey;
 }

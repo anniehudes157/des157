@@ -7,17 +7,22 @@
   <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
   <link href="styles.css" rel="stylesheet" />
-  <script src="lib/p5.js" type="text/javascript"></script>
-  <script src="lib/p5.play.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@code-dot-org/p5.play@1.2.0-cdo/lib/p5.play.js" type="text/javascript"></script>
 </head>
 
 <body>
-  <h1>"I don't want to do my homework!"</h1>
-  <h2>Click to distract yourself:</h2>
-  <nav role="navigation">
-      <div id="mySketch"></div>
-  </nav>
-  <div id="tv"></div>
+  <section id="intro">
+  <h1>You woke up in a strange place...</h1>
+  <h2>Click to explore.</h2>
+  </section>
+  <section id="game">
+    <div id="mySketch"></div>
+    <div id="buttons">
+      <button id="fullS">Fullscreen</button>
+      <button id="exitFullS">Exit Fullscreen</button>
+    </div>
+  </section>
 
   <!--validation-->
   <footer>
@@ -26,7 +31,10 @@
     <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
     <span>//</span>
     <a href="https://jigsaw.w3.org/css-validator/check/referer" id="css">Valid CSS</a>
+    <span>//</span>
+    <a href="http://p5play.molleindustria.org/">p5.play</a>
   </footer>
   <script src="script.js" type="text/javascript"></script>
 </body>
+
 </html>
