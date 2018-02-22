@@ -11,14 +11,18 @@ h1, h2 {
   margin-top: 1%;
   font-size: 20px;
   position: absolute;
-top: 40%;
-left: 50%;
-transform: translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 h2 {
   font-size: 15px;
   top: 50%;
+}
+
+h3 {
+  display: none;
 }
 
 ul li {
@@ -39,6 +43,7 @@ ul li {
 #game {
   margin-top: 2%;
 }
+
 #mySketch {
   width: 1000px;
   margin: auto;
