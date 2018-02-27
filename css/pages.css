@@ -140,3 +140,9 @@ img {
   line-height: 20px;
   padding: 0px;
 }
+
+/*styling for paper-prototype.html*/
+#prototype img {
+  width: 40%;
+  padding: 10px;
+}
