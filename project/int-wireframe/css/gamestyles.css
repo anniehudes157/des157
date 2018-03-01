@@ -1,0 +1,50 @@
+html {
+  color: #595959;
+  font-family: 'Oxygen', sans-serif;
+}
+
+body{
+  width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+section {
+  margin-top: 200px;
+}
+
+article {
+  margin-top: 200px;
+}
+
+article p {
+  font-size: 25px;
+}
+
+ul li {
+  list-style-type: none;
+  text-align: center;
+}
+
+input {
+  margin: 10px;
+}
+
+button {
+  margin: 10px;
+}
+
+#submit {
+  margin: 20px;
+}
+
+footer {
+  position: fixed;
+  left: 1%;
+  bottom: 1%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #595959;
+}

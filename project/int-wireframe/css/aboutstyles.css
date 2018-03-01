@@ -1,0 +1,32 @@
+html{
+  font-family: 'Oxygen', sans-serif;
+}
+
+body{
+  width: 800px;
+  margin: auto;
+  text-align: left;
+  outline: solid black 1px;
+
+}
+
+article {
+  float: left;
+  width: 600px;
+  outline: solid black 1px;
+}
+
+img {
+  float: right;
+}
+
+footer {
+  position: fixed;
+  left: 1%;
+  bottom: 1%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #595959;
+}

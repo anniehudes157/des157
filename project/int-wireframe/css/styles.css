@@ -1,0 +1,56 @@
+html {
+    color: #595959;
+    font-family: 'Oxygen', sans-serif;
+}
+
+intro {
+  text-align: center;
+}
+
+body{
+  margin-top: 20%;
+}
+
+h1{
+  width: 335px;
+  margin: auto;
+  padding: 10px;
+}
+
+#old {
+  margin-top: 0;
+  text-align: center;
+}
+
+#introButton a {
+  display: block;
+  text-align: center;
+  border:none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  background-color: #595959;
+  width: 150px;
+  margin-left: 5%;
+  margin: auto;
+  text-decoration: none;
+  color: white;
+}
+
+#about{
+  width: 50px;
+  position: absolute;
+  bottom:3%;
+  right: 5%;
+}
+
+/*general footer styling for all pages*/
+footer {
+  position: fixed;
+  left: 1%;
+  bottom: 1%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #595959;
+}
