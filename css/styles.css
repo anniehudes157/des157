@@ -1,5 +1,6 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
+  color: white;
   /*background: linear-gradient(to bottom right, #91A8d0, #f7cac9);*/
   background-image: url(../images/bg1.png);
   background-repeat: no-repeat;
@@ -9,140 +10,67 @@ body {
 }
 
 header {
-  margin-top: 8%;
-}
-
-#name {
-  background-color: rgba(255, 255, 255, 0);
-  font-size: 500%;
-  color: white;
+  text-align: left;
+  position: absolute;
+  font-size: 80px;
   font-weight: bold;
   border-left: solid 10px;
-  border-color: rgba(255, 255, 255, 0.5);
-  padding-left: 40px;
+  border-color: rgba(255,255,255,0.5);
+  padding-left: 15px;
+  top: 100px;
 }
+
+h2 {
+  color: #4c1f66;
+  font-size: 30px;
+  margin-left: -40px;
+  border-bottom: solid #4c1f66 2px;
+}
+
 
 #mySketch {
   position: absolute;
-  margin-left: 30%;
-  margin-top: -180px;
-  float: left;
+  top: 100px;
+  left: 320px;
 }
 
-section {
-  color: white;
-  background-color: rgba(255, 255, 255, 0);
-  display: inline-block;
-  float: left;
-  margin-left: 30%;
-  margin-top: 10%;
-  margin-bottom: 5%;
+#studios{
+  position: absolute;
+  top: 400px;
+  left: 420px;
 }
 
-#studios ol {
-  padding-left: 15%;
-  list-style-type: decimal;
+#project {
+  position: absolute;
+  top: 400px;
+  left: 780px;
+}
+
+#studios ul, #project ul {
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 #project ul {
-  width: 200px;
-  margin-left: 5%;
-  list-style-type: square;
+  margin-left: 20px;
 }
-
-nav h2 {
-  background-color: rgba(255, 255, 255, 0);
-  font-weight: 600;
-  font-size: 40px;
-  color: #574687;
-}
-
-nav a {
-  background-color: rgba(255, 255, 255, 0);
+a {
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  line-height: 22px;
+  font-size: 17px;
 }
 
-nav li {
-  margin-left: 15%;
-  margin-top: 5%;
+a:hover {
+  color: #6079b2;
+}
+#project a {
+  list-style-type: square;
+  display:list-item;
 }
 
 footer {
   position: fixed;
-  bottom: 0%;
-  left: 0%;
-  padding: 10px;
-  width: 100%;
-  background: rgba(255,255,255, 0.7);
-  color: #7b8ac4;
-}
-
-footer li {
-  display: inline-block;
-}
-
-a:hover {
-  background-color: rgba(255, 255, 255, 0);
-  color: #574687;
-}
-
-footer li a {
-  background-color: rgba(255, 255, 255, 0);
-  text-decoration: none;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 10pt;
-  color: #7b8ac4;
-  padding-right: 10px;
-}
-
-
-/*for Ipad*/
-
-@media only screen and (max-width: 1000px) {
-  #mySketch {
-    margin-top: 0%;
-    margin-left: 0%;
-  }
-  section {
-    margin-bottom: 10%;
-  }
-  nav {
-    margin-top: 200px;
-    margin-left: 0%;
-  }
-  #studios {
-    margin-left: 100px;
-  }
-  #project {
-    margin-left: 15%;
-  }
-}
-
-/*For Phone*/
-
-@media only screen and (max-width: 668px) {
-  #mySketch {
-    margin-top: 0%;
-    margin-left: 0%;
-  }
-  nav {
-    font-size: 1em;
-    margin-left: 0%;
-  }
-  section {
-    margin-bottom: 15%;
-  }
-  section h2 {
-    font-size: 2em;
-  }
-  #studios {
-    margin-top: 80px;
-    margin-left: 5%;
-  }
-  #project {
-    margin-left: 10%;
-    margin-top: 80px;
-  }
+  bottom: 1%;
+  left: 1%;
 }
