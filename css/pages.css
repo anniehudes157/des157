@@ -30,13 +30,14 @@ img {
 #home {
   position: fixed;
   text-decoration: none;
-  color: grey;
+  color: white;
   left: 1%;
   bottom: 1%;
 }
 
 #home:hover {
   color: #7c66ba;
+  cursor: pointer;
 }
 
 /* Comparative research */
