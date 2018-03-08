@@ -7,28 +7,33 @@
   <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Oxygen%7cQuicksand" rel="stylesheet">
   <link href="styles.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.js"></script>
 </head>
 
-  <body>
-    <article class="page" id="page1">
+<body>
+  <article id="intro">
+    <section class="page" id="page1">
       <h6>placeholder</h6>
-    <div id="intro">
-      <h1 id="feel">How does it feel like...</h1>
-      <h1 id="old">to be old?</h1>
-    </div>
-    <a href="#page2" class="center-button" id="buttonPage1">I'm Curious</a>
-    </article>
+      <div id="opening">
+        <h1 id="feel">How does it feel like...</h1>
+        <h1 id="old">to be old?</h1>
+      </div>
+      <a href="#page2" class="center-button" id="buttonPage1">I'm curious</a>
+    </section>
 
-    <article class="page" id="page2">
+    <section class="page" id="page2">
       <h6>placeholder</h6>
-    <p id="warning">You are about to enter the immersive experience of being an elderly. Are you ready for this?</p>
-    <a href="#page3" class="center-button" id="buttonPage2">Yes, I'm ready</a>
-    </article>
+      <p>This is an immersive experience on the everyday life of the elderly.</p>
+      <p id="ready">You will be taking on the role of a typical elder.</p>
+      <a href="#page3" class="center-button" id="buttonPage2">Proceed</a>
+    </section>
 
-    <article class="page" id="page3">
+    <section class="page" id="page3">
       <h6>placeholder</h6>
       <form name="f" id="form">
         <div>
+          <h5>First, some basic information:</h5>
           <p>What is your first name?</p>
           <label for="userName"></label>
           <input type="text" name="userName" id="userName" required>
@@ -44,26 +49,30 @@
           <label for="other">Other</label>
         </div>
         <div>
-          <input type="submit" id="submit" value="I'm ready" />
+          <input type="submit" class="center-button" id="buttonPage3" value="I'm ready" />
         </div>
       </form>
-    </article>
+    </section>
+  </article>
 
-    <article class="page" id="page4">
+  <article id="story">
+    <section class="page" id="page4">
       <h6>placeholder</h6>
-      <img src="images/proto1.png" width="1366" alt="woman waving">
-      <p id="response"></p>
-    </article>
+      <img src="images/proto1.png" id="story1" width="1366" alt="woman waving">
+      <img src="images/speechbubble.png" class="speechbubble" alt="speech bubble">
+    </section>
+
+  </article>
 
   <footer>
-    <a href="../../index.html">Home</a>
+    <a href="../../index.html">Portal</a>
     <span>//</span>
-    <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+    <a href="https://validator.w3.org/check?uri=referer">Valid HTML5</a>
     <span>//</span>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer" id="css">Valid CSS</a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" id="css">Valid CSS3</a>
   </footer>
 
   <script src="script.js"></script>
-  </body>
+</body>
 
 </html>
