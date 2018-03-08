@@ -16,10 +16,11 @@ a {
   color: white;
 }
 
-h1 {
+#feel, #old {
   width: 335px;
   margin: auto;
   padding: 10px;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -190,8 +191,9 @@ label {
   text-align: left;
   padding: 10px;
 
-  animation-name: fadeInUp;
+  animation-name: hide, fadeInUp;
   animation-duration: 3s;
+  animation-delay: 0s, 1.5s;
 }
 
 #tip1 {
@@ -219,12 +221,13 @@ label {
 .choices {
   position: absolute;
   width: 200px;
-  top: 20%;
+  top: 30%;
   right: 10%;
   margin-bottom: 10px;
   animation-name: hide, fadeInRight;
   animation-duration: 2s;
   animation-delay: 0s, 2s;
+  font-size: 20px;
 }
 
 ul li {
@@ -233,8 +236,14 @@ ul li {
   border-radius: 50px;
   text-align: center;
   padding: 5px 10px 5px 10px;
+  margin: 30px;
   color: white;
   margin: 10px;
+}
+
+ul li:hover {
+  background-color: rgba(255,255,255,0.5);
+  border-color: rgba(255,255,255,0.5);
 }
 
 

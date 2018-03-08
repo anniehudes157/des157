@@ -16,13 +16,13 @@ var coolTip = document.getElementById('coolTip');
 
 
 
-var audio1 = new Audio('sound/sad.mp3');;//plays background music
+var audio1 = new Audio('sound/sad.mp3');//loads background music
+var audio2 = new Audio('sound/hopeful.mp3');
 
 buttonPage1.addEventListener('click', function() { //goes to page 2 on click
   page2.style.display = "block";
   page1.style.display = "none";
   buttonPage1.style.display = "none";
-  audio1.play();
 });
 
 buttonPage2.addEventListener('click', function() { //goes to page 3 on click
@@ -37,6 +37,7 @@ document.f.onsubmit = processForm;
 buttonPage3.addEventListener('click', function() { //goes to page 4 on click
 var audio2 = new Audio('sound/hopeful.mp3');
   setTimeout(function(){tip1.style.display = "block"}, 1000*3);
+  audio1.play();
 });
 
 page4.addEventListener('click', function() { //goes to page 5 on click
