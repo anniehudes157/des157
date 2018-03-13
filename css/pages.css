@@ -181,6 +181,7 @@ img {
 #test p:last-child {
   margin-bottom: 20px;
 }
+
 #test h2 {
   margin-left: 0px;
 }
@@ -189,6 +190,15 @@ img {
   color: grey;
 }
 
-#text a:hover {
+#test a:hover {
   color: black;
+  cursor: pointer;
+}
+
+#perform {
+  padding-bottom: 30px;
+}
+
+#click {
+  padding: 20px;
 }
