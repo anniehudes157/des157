@@ -66,7 +66,7 @@ function processForm() {
 
   var userName = document.f.userName.value;
 
-  result.innerHTML="Your character will have the following information:<br><strong><br>Name: " + userName + "<br>Gender: Female<br>Ethnicity: White/Caucasian<br>Age: 65<br><br></strong>Press arrow to go to next page. Close window to re-submit form.";
+  result.innerHTML="Your character will have the following information:<br><strong><br>Name: " + userName + "<br>Gender: Female<br>Ethnicity: White/Caucasian<br>Age: 65<br><br></strong>Press arrow below to go to next page. Close window to re-submit form.";
   console.log("result");
   msg1.innerHTML="Oh! Good morning " + userName + "! You're up early, as usual.";
   return false;
@@ -80,7 +80,7 @@ function resetForm() {
 
   var userName = "Emily";
 
-  result.innerHTML="Your character will have the following information:<br><strong><br>Name: " + userName + "<br>Gender: Female<br>Ethnicity: White/Caucasian<br>Age: 65<br><br></strong>Press arrow to go to next page. Close window to re-submit form.</em>"
+  result.innerHTML="Your character will have the following information:<br><strong><br>Name: " + userName + "<br>Gender: Female<br>Ethnicity: White/Caucasian<br>Age: 65<br><br></strong>Press arrow below to go to next page. Close window to re-submit form.</em>"
   console.log("result");
   msg1.innerHTML="Oh! Good morning " + userName + "! You're up early, as usual.";
   return false;
