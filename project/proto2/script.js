@@ -36,7 +36,7 @@ document.f.onsubmit = processForm;
 
 buttonPage3.addEventListener('click', function() { //goes to page 4 on click
 var audio2 = new Audio('sound/hopeful.mp3');
-  setTimeout(function(){tip1.style.display = "block"}, 1000*3);
+  setTimeout(function(){tip1.style.display = "block"}, 1000);
   audio1.play();
 });
 
