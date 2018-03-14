@@ -212,7 +212,7 @@ li {
 #result {
   padding-top: 100px;
   width: 570px;
-  height: 800px;
+  height: 500px;
   margin: auto;
   border-radius: 10px;
   font-size: 17px;
@@ -236,7 +236,7 @@ li {
 .next {
   position: fixed;
   bottom: 5%;
-  left: 46%;
+  left: 48%;
   animation-name: hide, fadeInUp, UpDown;
   animation-duration: 1s, 2s,3s;
   animation-delay: 0s,1s,1s;
