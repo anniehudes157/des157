@@ -25,6 +25,9 @@ body {
   overflow:hidden;
 }
 
+h6 {
+  display: none;
+}
 /* Display the page when targeted */
 .pages:target {
   position: absolute;
@@ -398,6 +401,9 @@ li {
   height: 768px;
 }
 
+#page8, #page9, #page10 {
+  background-color: #3660b6;
+}
 #page8 div {
   width: 40%;
   margin: auto;
@@ -451,6 +457,9 @@ li {
   top: 50px;
 }
 
+#roomView {
+  z-index: 1;
+}
 .objects img {
   position: absolute;
 }
@@ -468,11 +477,13 @@ li {
 #photobook {
   bottom: 120px;
   right: 240px;
+  z-index: 2;
 }
 
 #windowNote {
   top: 145px;
   right: 340px;
+
 }
 
 #radio {
@@ -485,6 +496,11 @@ li {
   top: 350px;
 }
 
+#photo {
+  right: 200px;
+  top: 300px;
+}
+
 .roomTip {
   position: absolute;
   width: 400px;
@@ -495,11 +511,12 @@ li {
   border-radius: 10px;
 }
 
-#breakfastTip, #photobookTip, #windownoteTip, #yarnTip {
-  display:none;
+#breakfastTip, #photobookTip, #windownoteTip, #yarnTip, #photoTip {
+  display: none;
   animation-name:  delay;
   animation-duration: 1s;
   animation-delay: 0s;
+  z-index: 2;
 }
 
 .roomTip p {
@@ -511,6 +528,7 @@ li {
   top: 10px;
   right: 10px;
   font-size: 20px;
+  z-index: 3;
 }
 
 .close:hover {

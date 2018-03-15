@@ -3,6 +3,7 @@
 console.log("reading");
 
 var audio1 = new Audio('sound/sad.mp3');
+var audio2 = new Audio('sound/hopeful.mp3');
 
 var page3 = document.getElementById('page3');
 var page4 = document.getElementById('page4');
@@ -19,9 +20,21 @@ var resultBox = document.getElementById("resultBox");
 var result = document.getElementById("result");
 
 var photobook = document.getElementById('photobook');
-var breakfast = document.getElementById('breakfast');
+var photobookTip = document.getElementById('photobookTip');
+
+var photo = document.getElementById('photo');
+var photoTip = document.getElementById('photoTip');
+
+var breakfast = document.getElementById('breakfastTip');
+var breakfastTip = document.getElementById('breakfastTip');
+
 var windowNote = document.getElementById('windowNote');
 var windownoteTip = document.getElementById('windownoteTip');
+
+var radio= document.getElementById('radio');
+var radioTip= document.getElementById('radioTip');
+
+var roomView = document.getElementById('roomView');
 
 var close1 = document.getElementById("close1");
 var close2 = document.getElementById("close2");
@@ -39,8 +52,8 @@ var choice1c = document.getElementById('choice1c');
 
 var reminder= document.getElementById("reminder");
 
-/*
-breakfastTip.addEventListener('click', function(){
+
+breakfast.addEventListener('click', function(){
   breakfastTip.style.display ="block";
 });
 
@@ -48,14 +61,30 @@ photobook.addEventListener('click', function(){
   photobookTip.style.display ="block";
 });
 
-windownote.addEventListener('click', function(){
+photo.addEventListener('click', function(){
+  photoTip.style.display ="block";
+});
+
+yarn.addEventListener('click', function(){
+  yarnTip.style.display ="block";
+});
+
+
+windowNote.addEventListener('click', function(){
   windownoteTip.style.display ="block";
+});
+
+
+photobook.addEventListener('click', function(){
+  photobookTip.style.display ="block";
 });
 
 close1.addEventListener('click', function (){
   resultBox.style.display="none";
 });
 
+
+/**
 close2.addEventListener('click', function (){
   breakfastTip.style.display="none";
 });
@@ -65,20 +94,32 @@ close3.addEventListener('click', function(){
 });
 
 close4.addEventListener('click', function(){
-  photobookTip.style.display ="none;";
+  windownoteTip.style.display ="none;";
 });
 
-*/
+close5.addEventListener('click', function(){
+  yarnTip.style.display ="none;";
+});
+**/
+
 choice1a.addEventListener('click', function() {
 msg2.innerHTML = "I left your breakfast at the counter. I'm going to take the kids to school and then go to work now! See you tonight!";
+resultBox.style.display="none";
 });
 
 choice1b.addEventListener('click', function() {
 msg2.innerHTML = "I'm good! I'm just about to take the kids to school and then go to work. I'll see you tonight!";
+resultBox.style.display="none";
 });
 
 choice1c.addEventListener('click', function() {
 msg2.innerHTML = "Haha, you seem active today. I'm going to take the kids to school and then go to work. I'll see you later!";
+resultBox.style.display="none";
+});
+
+
+submitForm.addEventListener('click', function() {
+audio1.play()
 });
 
 document.f.onsubmit = processForm;
