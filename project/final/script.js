@@ -35,6 +35,7 @@ var radio= document.getElementById('radio');
 var radioTip= document.getElementById('radioTip');
 
 var roomView = document.getElementById('roomView');
+var items = document.getElementById('items');
 
 var close1 = document.getElementById("close1");
 var close2 = document.getElementById("close2");
@@ -55,28 +56,58 @@ var reminder= document.getElementById("reminder");
 
 breakfast.addEventListener('click', function(){
   breakfastTip.style.display ="block";
+  photobookTip.style.display ="none";
+  photoTip.style.display ="none";
+  yarnTip.style.display ="none";
+  windownoteTip.style.display ="none";
+  radioTip.style.display ="none";
 });
 
 photobook.addEventListener('click', function(){
   photobookTip.style.display ="block";
+  breakfastTip.style.display ="none";
+  photoTip.style.display ="none";
+  yarnTip.style.display ="none";
+  windownoteTip.style.display ="none";
+  radioTip.style.display ="none";
 });
 
 photo.addEventListener('click', function(){
   photoTip.style.display ="block";
+  photobookTip.style.display ="none";
+  breakfastTip.style.display ="none";
+  yarnTip.style.display ="none";
+  windownoteTip.style.display ="none";
+  radioTip.style.display ="none";
 });
 
 yarn.addEventListener('click', function(){
   yarnTip.style.display ="block";
+  photobookTip.style.display ="none";
+  breakfastTip.style.display ="none";
+  photoTip.style.display ="none";
+  windownoteTip.style.display ="none";
+  radioTip.style.display ="none";
 });
 
 
 windowNote.addEventListener('click', function(){
   windownoteTip.style.display ="block";
+  photobookTip.style.display ="none";
+  breakfastTip.style.display ="none";
+  photoTip.style.display ="none";
+  yarnTip.style.display ="none";
+  radioTip.style.display ="none";
 });
 
 
-photobook.addEventListener('click', function(){
-  photobookTip.style.display ="block";
+radio.addEventListener('click', function(){
+  radioTip.style.display ="block";
+  photobookTip.style.display ="none";
+  breakfastTip.style.display ="none";
+  photoTip.style.display ="none";
+  yarnTip.style.display ="none";
+  windownoteTip.style.display ="none";
 });
 
 close1.addEventListener('click', function (){
