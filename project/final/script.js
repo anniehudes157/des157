@@ -10,6 +10,7 @@ var page5 = document.getElementById('page5');
 
 var msg1 = document.getElementById("msg1");
 var msg2 = document.getElementById("msg2");
+var msg4 = document.getElementById("msg2");
 
 var userName = document.f.userName.value;
 
@@ -17,9 +18,16 @@ var submitForm = document.getElementById("submitForm");
 var resultBox = document.getElementById("resultBox");
 var result = document.getElementById("result");
 
+var photobook = document.getElementById('photobook');
+var breakfast = document.getElementById('breakfast');
+var windowNote = document.getElementById('windowNote');
+var windownoteTip = document.getElementById('windownoteTip');
+
 var close1 = document.getElementById("close1");
 var close2 = document.getElementById("close2");
 var close3 = document.getElementById("close3");
+var close4 = document.getElementById("close4");
+var close5 = document.getElementById("close5");
 
 var tip1 = document.getElementById("tip1");
 var tip2 = document.getElementById("tip2");
@@ -29,19 +37,38 @@ var choice1a = document.getElementById('choice1a');
 var choice1b = document.getElementById('choice1b');
 var choice1c = document.getElementById('choice1c');
 
+var reminder= document.getElementById("reminder");
+
+/*
+breakfastTip.addEventListener('click', function(){
+  breakfastTip.style.display ="block";
+});
+
+photobook.addEventListener('click', function(){
+  photobookTip.style.display ="block";
+});
+
+windownote.addEventListener('click', function(){
+  windownoteTip.style.display ="block";
+});
 
 close1.addEventListener('click', function (){
   resultBox.style.display="none";
 });
 
 close2.addEventListener('click', function (){
-  tip1.style.display="none";
+  breakfastTip.style.display="none";
 });
 
-close3.addEventListener('click', function (){
-  tip2.style.display="none";
+close3.addEventListener('click', function(){
+  photobookTip.style.display ="none;";
 });
 
+close4.addEventListener('click', function(){
+  photobookTip.style.display ="none;";
+});
+
+*/
 choice1a.addEventListener('click', function() {
 msg2.innerHTML = "I left your breakfast at the counter. I'm going to take the kids to school and then go to work now! See you tonight!";
 });
@@ -69,6 +96,7 @@ function processForm() {
   result.innerHTML="Your character will have the following information:<br><strong><br>Name: " + userName + "<br>Gender: Female<br>Ethnicity: White/Caucasian<br>Age: 65<br><br></strong>Press arrow below to go to next page. Close window to re-submit form.";
   console.log("result");
   msg1.innerHTML="Oh! Good morning " + userName + "! You're up early, as usual.";
+  msg4.innerHTML="Hey " + userName + "! The kids and I are back!";
   return false;
 
 }
@@ -83,5 +111,10 @@ function resetForm() {
   result.innerHTML="Your character will have the following information:<br><strong><br>Name: " + userName + "<br>Gender: Female<br>Ethnicity: White/Caucasian<br>Age: 65<br><br></strong>Press arrow below to go to next page. Close window to re-submit form.</em>"
   console.log("result");
   msg1.innerHTML="Oh! Good morning " + userName + "! You're up early, as usual.";
+  msg4.innerHTML="Hey " + userName + "! The kids and I are back!";
   return false;
 }
+
+var timerId = setTimeout(function(){
+  reminder.style.display="block";
+}, 1000 *3);

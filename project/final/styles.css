@@ -16,16 +16,11 @@ a {
   color: white;
 }
 
-*{
-  box-sizing: border-box;
-}
-
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family:Helvetica;
   font-size:100%;
   overflow:hidden;
 }
@@ -62,9 +57,9 @@ li {
 
 /*next button with animation*/
 .nextIntro {
-  width: 100px;
-  margin:auto;
-  text-align: center;
+  position: fixed;
+  bottom: 10%;
+  left: 45%;
   transition-duration: .5s;
   animation-name: hide, fadeInUp, UpDown;
   animation-duration: 1s, 1s,3s;
@@ -72,14 +67,13 @@ li {
   animation-iteration-count: 1,1, infinite;
 }
 
+.nextIntro img {
+  margin-top: 10px;
+}
 .nextIntro:hover {
   opacity: 0.5;
   transition-duration: 0.5s;
   cursor: pointer;
-}
-
-.nextIntro img{
-  padding-top: 10px;
 }
 
 /*individual page styling*/
@@ -95,27 +89,31 @@ li {
   animation-name: hide, delay;
   animation-duration: 3s;
   animation-delay: 0s, 0s;
+  font-family: 'Quicksand', sans-serif;
 }
 
 #page2 p{
-  width: 350px;
+  width: 40%;
   margin: auto;
   text-align: left;
-  margin-top: 300px;
+  padding-top: 170px;
   line-height: 25px;
-  font-size: 17px;
+  font-size: 100%;
 }
 
-#page2 .nextIntro {
-  margin-top: 200px;
+#page2 .nextIntro img{
+  position: fixed;
+  margin-top: 10px;;
+  margin-left: -20px;
 }
+
 /*Home page styling ends here*/
 
 /*Experience page styling starts here*/
 #page3 {
   animation-name: hide, delay;
-  animation-duration: 1s;
-  animation-delay: 0s, 0s;
+  animation-duration: 2s;
+  animation-delay: 0s, 1s;
 }
 
 #page3 p {
@@ -171,7 +169,7 @@ li {
 }
 
 #experiencePage .pages{
-  background: linear-gradient(to bottom, #56b9ed, #4aafe7, #3ea5e2, #329bdc, #2691d6);
+  background: #459ff3;
 }
 
 #page4 div{
@@ -194,14 +192,14 @@ li {
 
 #resultBox {
   position: absolute;
-  top: 80px;
+  top: 100px;
   left: 300px;
   width: 600px;
   margin: auto;
-  height: 500px;
+  height: 550px;
   border-radius: 30px;
   border: solid white 1px;
-  background-color: #40afef;
+  background-color: #4cb1ff;
 
   animation-name: fadeInUp;
   animation-duration: 1s;;
@@ -209,15 +207,25 @@ li {
   display: none;
 }
 
+#resultBox p {
+  width: 400px;
+}
+
 #result {
-  padding-top: 100px;
-  width: 570px;
+  padding-top: 140px;
+  padding-left: 220px;
   height: 800px;
   margin: auto;
   border-radius: 10px;
   font-size: 17px;
   line-height: 20px;
+}
 
+
+#userPic {
+  position: absolute;
+  left: 70px;
+  top: 140px;
 }
 
 #close1 {
@@ -232,11 +240,10 @@ li {
   cursor: pointer;
 }
 
-
 .next {
   position: fixed;
   bottom: 5%;
-  left: 46%;
+  left: 48%;
   animation-name: hide, fadeInUp, UpDown;
   animation-duration: 1s, 2s,3s;
   animation-delay: 0s,1s,1s;
@@ -258,11 +265,10 @@ li {
 }
 
 .tips {
-  position: absolute;
-  width: 45%;
-  left: 23%;
-  top: 55%;
-  margin-bottom: 200px;
+  position: fixed;
+  width: 40%;
+  left: 30%;
+  bottom: 15%;
   padding: 10px;
   text-align: left;
   background-color: rgba(0, 76, 142, 0.5);
@@ -284,25 +290,10 @@ li {
   margin-bottom: -20px;
 }
 
-.close {
-  position: absolute;
-  top: 2%;
-  right: 2%;
-  font-size: 25px;
-}
-
-.close:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
-
 .name{
   font-size: 20px;
   font-weight: bold;
   width: 150px;
-  padding-bottom: 5px;
-  margin-bottom: -10px;
-  border-bottom: solid white 1px;
 }
 
 .title{
@@ -310,29 +301,34 @@ li {
   line-height: 20px;
 }
 
-.characterIntro {
+.characterIntro img{
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  width: 550px;
+  top: 200px;
+  left: 150px;
   text-align: left;
+  animation-name: hide, delay;
+  animation-duration: 1s;
+  animation-delay: 0s,0.5s;
+}
+
+.characterTitle {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  background-color: rgba(23, 62, 124,0.8);
+  text-align: left;
+  padding: 5px 20px;
   animation-name: hide, fadeInLeft;
   animation-duration: 1s;
   animation-delay: 0s,0.5s;
 }
 
-.characterIntro p {
-  margin-left: 30px;
-}
-
-.characterImg {
-  margin-top: -100px;
-  width: 800px;
-}
 
 .dialogue {
   position: absolute;
-  top: 120px;
-  left: 480px;
+  top: 200px;
+  left: 650px;
   width: 300px;
   animation-name: hide, fadeInLeft;
   animation-duration: 1s;
@@ -360,13 +356,13 @@ li {
 
 .choices{
   position: absolute;
-  top: 300px;
-  right: 300px;
+  top: 400px;
+  left: 800px;
   width: 200px;
   text-align: center;
   animation-name: hide, fadeInRight;
   animation-duration: 2s;
-  animation-delay: 0s, 2s;
+  animation-delay: 0s, 1s;
 }
 
 .choices p {
@@ -387,10 +383,6 @@ li {
   transition-duration: 0.4s;
 }
 
-#page6 .characterIntro {
-  margin-top: 100px;
-}
-
 #page4 .characterIntro {
   animation-name: hide, delay;
   animation-duration: 1s;
@@ -401,27 +393,31 @@ li {
   margin-top: 25px;
 }
 
-#page4, #page7 {
+
+#page4, #page5, #page6 #page7, #page12 {
   height: 768px;
 }
 
-#page7 div {
-  width: 340px;
-  margin:auto;
-  text-align: left;
+#page8 div {
+  width: 40%;
+  margin: auto;
   font-size: 25px;
-  margin-top:15%;
-  padding-bottom: 200px;
+  text-align: left;
+  padding-top: 170px;
+
+  animation-name: hide, delay;
+  animation-duration: 2s;
+  animation-delay: 0s,0.5s;
 }
 
-#page8 p {
+#page9 p {
   font-size: 20px;
   margin-top: 200px;
   padding-top: 60px;
   padding-left: 10px;
 }
 
-#page8 div {
+#page9 div {
   background-color: rgba(0,0,0,0.5);
   width: 400px;
   height: 300px;
@@ -429,11 +425,11 @@ li {
   border-radius: 20px;
 
   animation-name: hide, fadeInUp;
-  animation-duration: 1s;
-  animation-delay: 0s,1s;
+  animation-duration: 0.5s, 1s;
+  animation-delay: 0s,0.5s;
 }
 
-#page8 ul li {
+#page9 ul li {
   margin-top: 15px;
   width: 300px;
   text-align: center;
@@ -444,42 +440,156 @@ li {
   margin-left: 10px;
 }
 
-#page8 ul li:first-child:hover {
+#page9 ul li:first-child:hover {
   cursor: pointer;
   background: rgba(255,255,255,0.2);
 }
 
-#page9 p, #page11 p {
+#page10 {
   margin: auto;
-  padding-top: 300px;
-  width: 400px;
-  font-size: 20px;
-  text-align: left;
-  animation-name: hide,delay;
-  animation-duration: 1s;
-  animation-delay: 0s,0.5s;
+  position: absolute;
+  top: 50px;
 }
 
-#page10 div {
+.objects img {
+  position: absolute;
+}
+
+.objects img:hover {
+  cursor: pointer;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.3));
+}
+
+#breakfast {
+  top: 310px;
+  right: 460px;
+}
+
+#photobook {
+  bottom: 120px;
+  right: 240px;
+}
+
+#windowNote {
+  top: 145px;
+  right: 340px;
+}
+
+#radio {
+  bottom: 280px;
+  left: 460px;
+}
+
+#yarn {
+  left: 280px;
+  top: 350px;
+}
+
+.roomTip {
+  position: absolute;
+  width: 400px;
+  top: 200px;
+  left: 200px;
+  background-color: #1c67a0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#breakfastTip, #photobookTip, #windownoteTip, #yarnTip {
+  display:none;
+  animation-name:  delay;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+.roomTip p {
+  text-align: left;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   font-size: 20px;
-  text-align: center;
-  margin-top: 250px;
+}
+
+.close:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#reminder{
+  width: 250px;
+  background-color: white;
+  border: solid grey 0.5px;
+  position: absolute;
+  bottom: 100px;
+  left: 150px;
+  color: black;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: left;
+  display: none;
+
+  animation-name:  delay;
+  animation-duration: 1s;
+  animation-delay: 0s;
+
+}
+
+#page11 div {
+  margin-top: 220px;
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#page13 div, #page14 div {
+  width: 500px;
+  margin: auto;
+  margin-top: 220px;
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
   line-height: 25px;
+  text-align: left;
 
   animation-name: hide, delay;
-  animation-duration: 1s;
-  animation-delay: 0s, 1s;
+  animation-duration: 0.5s, 2s;
+  animation-delay: 0s, 0.5s;
 
 }
 
-#page10 div a{
+#page14 div p {
+  margin-top: 80px;
+  width: 400px;
+  font-size: 22px;
+}
+#page15 {
+  padding-top: 200px;
+}
+
+#page15 p {
+ margin: auto;
+ width: 500px;
+ font-size: 25px;
+ font-family: 'Quicksand', sans-serif;
+ text-align: center;
+ line-height: 35px;
+ animation-name: delay;
+ animation-duration: 3s;
+ animation-delay: 0s;
+ margin-bottom: 40px;
+}
+
+#page15 div a {
   border: solid white 1px;
-  padding: 5px 10px;
   border-radius: 20px;
+  padding: 10px 20px;
+  margin-left: -60px;
   transition-duration: 0.5s;
 }
 
-#page10 div a:hover {
+#page15 div a:hover {
   background-color: rgba(255,255,255,0.5);
   border: none;
   transition-duration: 0.5s;
@@ -591,8 +701,8 @@ li {
 
 #sideNav {
   position: fixed;
-  top: 200px;
-  right: 20px;
+  top: 180px;
+  right: 12px;
   z-index: 2;
 }
 
@@ -601,14 +711,14 @@ li {
   padding: 2px 2px;
   margin:10px;
   margin-right: 20px;
-  line-height: 6px;
+  line-height: 10px;
+  text-align: right;
+  font-size: 13px;
 }
 
 #sideNav a:hover {
-  background: white;
-  border: solid white 1px;
-  border-radius: 100px;
   opacity: 0.5;
+  transition-duration: 0.5s;
 }
 
 footer {
