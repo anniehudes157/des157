@@ -20,19 +20,19 @@ var resultBox = document.getElementById("resultBox");
 var result = document.getElementById("result");
 
 var photobook = document.getElementById('photobook');
-var photobookTip = document.getElementById('photobookTip');
+var photobookOverlay = document.getElementById('photobookOverlay');
 
 var photo = document.getElementById('photo');
-var photoTip = document.getElementById('photoTip');
+var photoOverlay = document.getElementById('photoOverlay');
 
-var breakfast = document.getElementById('breakfastTip');
-var breakfastTip = document.getElementById('breakfastTip');
+var breakfast = document.getElementById('breakfast');
+var breakfastOverlay = document.getElementById('breakfastOverlay');
 
 var windowNote = document.getElementById('windowNote');
-var windownoteTip = document.getElementById('windownoteTip');
+var windownoteOverlay = document.getElementById('windownoteOverlay');
 
 var radio= document.getElementById('radio');
-var radioTip= document.getElementById('radioTip');
+var radioOverlay= document.getElementById('radioOverlay');
 
 var roomView = document.getElementById('roomView');
 var items = document.getElementById('items');
@@ -42,6 +42,9 @@ var close2 = document.getElementById("close2");
 var close3 = document.getElementById("close3");
 var close4 = document.getElementById("close4");
 var close5 = document.getElementById("close5");
+var close6 = document.getElementById("close6");
+var close7 = document.getElementById("close7");
+
 
 var tip1 = document.getElementById("tip1");
 var tip2 = document.getElementById("tip2");
@@ -54,107 +57,118 @@ var choice1c = document.getElementById('choice1c');
 var reminder= document.getElementById("reminder");
 
 
-breakfast.addEventListener('click', function(){
-  breakfastTip.style.display ="block";
-  photobookTip.style.display ="none";
-  photoTip.style.display ="none";
-  yarnTip.style.display ="none";
-  windownoteTip.style.display ="none";
-  radioTip.style.display ="none";
+breakfast.addEventListener('click', function(){ //opens overlay of breakfast on click
+  breakfastOverlay.style.display ="block";
+  close2.style.display ="block";
+  photobookOverlay.style.display ="none";
+  photoOverlay.style.display ="none";
+  yarnOverlay.style.display ="none";
+  windownoteOverlay.style.display ="none";
+  radioOverlay.style.display ="none";
 });
 
-photobook.addEventListener('click', function(){
-  photobookTip.style.display ="block";
-  breakfastTip.style.display ="none";
-  photoTip.style.display ="none";
-  yarnTip.style.display ="none";
-  windownoteTip.style.display ="none";
-  radioTip.style.display ="none";
+photobook.addEventListener('click', function(){ //opens overlay of photobook on click
+  photobookOverlay.style.display ="block";
+  close3.style.display ="block";
+  breakfastOverlay.style.display ="none";
+  photoOverlay.style.display ="none";
+  yarnOverlay.style.display ="none";
+  windownoteOverlay.style.display ="none";
+  radioOverlay.style.display ="none";
 });
 
-photo.addEventListener('click', function(){
-  photoTip.style.display ="block";
-  photobookTip.style.display ="none";
-  breakfastTip.style.display ="none";
-  yarnTip.style.display ="none";
-  windownoteTip.style.display ="none";
-  radioTip.style.display ="none";
+windowNote.addEventListener('click', function(){  //opens overlay of notes on window on click
+  windownoteOverlay.style.display ="block";
+  close4.style.display ="block";
+  photobookOverlay.style.display ="none";
+  breakfastOverlay.style.display ="none";
+  photoOverlay.style.display ="none";
+  yarnOverlay.style.display ="none";
+  radioOverlay.style.display ="none";
 });
 
-yarn.addEventListener('click', function(){
-  yarnTip.style.display ="block";
-  photobookTip.style.display ="none";
-  breakfastTip.style.display ="none";
-  photoTip.style.display ="none";
-  windownoteTip.style.display ="none";
-  radioTip.style.display ="none";
+yarn.addEventListener('click', function(){  //opens overlay of yarn on click
+  yarnOverlay.style.display ="block";
+  close5.style.display ="block";
+  photobookOverlay.style.display ="none";
+  breakfastOverlay.style.display ="none";
+  photoOverlay.style.display ="none";
+  windownoteOverlay.style.display ="none";
+  radioOverlay.style.display ="none";
 });
 
-
-windowNote.addEventListener('click', function(){
-  windownoteTip.style.display ="block";
-  photobookTip.style.display ="none";
-  breakfastTip.style.display ="none";
-  photoTip.style.display ="none";
-  yarnTip.style.display ="none";
-  radioTip.style.display ="none";
+photo.addEventListener('click', function(){   //opens overlay of photo frame on click
+  photoOverlay.style.display ="block";
+  close6.style.display ="block";
+  photobookOverlay.style.display ="none";
+  breakfastOverlay.style.display ="none";
+  yarnOverlay.style.display ="none";
+  windownoteOverlay.style.display ="none";
+  radioOverlay.style.display ="none";
 });
 
-
-radio.addEventListener('click', function(){
-  radioTip.style.display ="block";
-  photobookTip.style.display ="none";
-  breakfastTip.style.display ="none";
-  photoTip.style.display ="none";
-  yarnTip.style.display ="none";
-  windownoteTip.style.display ="none";
+radio.addEventListener('click', function(){   //opens overlay of radio on click
+  radioOverlay.style.display ="block";
+  close7.style.display ="block";
+  photobookOverlay.style.display ="none";
+  breakfastOverlay.style.display ="none";
+  photoOverlay.style.display ="none";
+  yarnOverlay.style.display ="none";
+  windownoteOverlay.style.display ="none";
 });
 
 close1.addEventListener('click', function (){
   resultBox.style.display="none";
 });
 
-
-/**
 close2.addEventListener('click', function (){
-  breakfastTip.style.display="none";
+  breakfastOverlay.style.display="none";
 });
 
-close3.addEventListener('click', function(){
-  photobookTip.style.display ="none;";
+close3.addEventListener('click', function (){
+  photobookOverlay.style.display="none";
 });
 
-close4.addEventListener('click', function(){
-  windownoteTip.style.display ="none;";
+close4.addEventListener('click', function (){
+  windownoteOverlay.style.display="none";
 });
 
-close5.addEventListener('click', function(){
-  yarnTip.style.display ="none;";
+close5.addEventListener('click', function (){
+  yarnOverlay.style.display="none";
 });
-**/
 
-choice1a.addEventListener('click', function() {
+close6.addEventListener('click', function (){
+  photoOverlay.style.display="none";
+});
+
+close7.addEventListener('click', function (){
+  radioOverlay.style.display="none";
+});
+
+
+choice1a.addEventListener('click', function() { //response to choice #1
 msg2.innerHTML = "I left your breakfast at the counter. I'm going to take the kids to school and then go to work now! See you tonight!";
 resultBox.style.display="none";
 });
 
-choice1b.addEventListener('click', function() {
+choice1b.addEventListener('click', function() {  //response to choice #2
 msg2.innerHTML = "I'm good! I'm just about to take the kids to school and then go to work. I'll see you tonight!";
 resultBox.style.display="none";
 });
 
-choice1c.addEventListener('click', function() {
+choice1c.addEventListener('click', function() {  //response to choice #3
 msg2.innerHTML = "Haha, you seem active today. I'm going to take the kids to school and then go to work. I'll see you later!";
 resultBox.style.display="none";
 });
 
 
-submitForm.addEventListener('click', function() {
+submitForm.addEventListener('click', function() { //plays music with the submittion of form
 audio1.play()
 });
 
-document.f.onsubmit = processForm;
-document.f.onreset = resetForm;
+
+document.f.onsubmit = processForm; //processes form on submit
+document.f.onreset = defaultForm;  //processes default ofmr on submitForm
 
 
 function processForm() {
@@ -173,8 +187,8 @@ function processForm() {
 
 }
 
-function resetForm() {
-  console.log("show tip2");
+function defaultForm() { //instead of reset form, gives default options
+  console.log("show Overlay2");
   submitForm.style.display = "block";
   resultBox.style.display = "block";
 
@@ -187,6 +201,6 @@ function resetForm() {
   return false;
 }
 
-var timerId = setTimeout(function(){
+var timerId = setTimeout(function(){  //gives pop up reminding user after 3 seconds
   reminder.style.display="block";
 }, 1000 *3);

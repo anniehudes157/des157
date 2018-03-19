@@ -193,7 +193,7 @@ li {
   margin-top: 50px;
 }
 
-#resultBox {
+#resultBox {  //results from submitting form
   position: absolute;
   top: 100px;
   left: 300px;
@@ -267,7 +267,7 @@ li {
   transition-duration: 0.3s;
 }
 
-.tips {
+.tips {     //popups appear below main texts to inform user
   position: fixed;
   width: 40%;
   left: 30%;
@@ -328,7 +328,7 @@ li {
 }
 
 
-.dialogue {
+.dialogue {     //what the characters on the screen say
   position: absolute;
   top: 200px;
   left: 650px;
@@ -396,7 +396,6 @@ li {
   margin-top: 25px;
 }
 
-
 #page4, #page5, #page6 #page7, #page12 {
   height: 768px;
 }
@@ -404,6 +403,7 @@ li {
 #page8, #page9, #page10 {
   background-color: #3660b6;
 }
+
 #page8 div {
   width: 40%;
   margin: auto;
@@ -497,11 +497,17 @@ li {
 }
 
 #photo {
-  right: 200px;
+  right: 270px;
   top: 300px;
 }
 
-.roomTip {
+#breakfastOverlay, #photobookOverlay, #windownoteOverlay, #yarnOverlay, #photoOverlay, #radioOverlay{
+  display: none;
+  animation-name:  delay;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  z-index: 2;
+
   position: absolute;
   width: 400px;
   top: 200px;
@@ -511,16 +517,12 @@ li {
   border-radius: 10px;
 }
 
-#breakfastTip, #photobookTip, #windownoteTip, #yarnTip, #photoTip {
-  display: none;
-  animation-name:  delay;
-  animation-duration: 1s;
-  animation-delay: 0s;
-  z-index: 2;
+#breakfastOverlay p, #photobookOverlay p, #windownoteOverlay p, #yarnOverlay p, #photoOverlay p, #radioOverlay p{
+text-align: left;
 }
 
-.roomTip p {
-  text-align: left;
+#close2, #close3, #close4, #close5, #close6, #close7{
+  display: none;
 }
 
 .close {
@@ -553,7 +555,6 @@ li {
   animation-name:  delay;
   animation-duration: 1s;
   animation-delay: 0s;
-
 }
 
 #page11 div {
