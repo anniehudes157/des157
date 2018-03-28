@@ -35,7 +35,6 @@ var radio= document.getElementById('radio');
 var radioOverlay= document.getElementById('radioOverlay');
 
 var roomView = document.getElementById('roomView');
-var items = document.getElementById('items');
 
 var close1 = document.getElementById("close1");
 var close2 = document.getElementById("close2");
@@ -57,6 +56,7 @@ var choice1c = document.getElementById('choice1c');
 var reminder= document.getElementById("reminder");
 
 
+<<<<<<< HEAD
 breakfast.addEventListener('click', function(){ //opens overlay of breakfast on click
   breakfastOverlay.style.display ="block";
   close2.style.display ="block";
@@ -115,6 +115,32 @@ radio.addEventListener('click', function(){   //opens overlay of radio on click
   photoOverlay.style.display ="none";
   yarnOverlay.style.display ="none";
   windownoteOverlay.style.display ="none";
+=======
+breakfast.addEventListener('click', function(){
+  breakfastTip.style.display ="block";
+});
+
+photobook.addEventListener('click', function(){
+  photobookTip.style.display ="block";
+});
+
+photo.addEventListener('click', function(){
+  photoTip.style.display ="block";
+});
+
+yarn.addEventListener('click', function(){
+  yarnTip.style.display ="block";
+});
+
+
+windowNote.addEventListener('click', function(){
+  windownoteTip.style.display ="block";
+});
+
+
+photobook.addEventListener('click', function(){
+  photobookTip.style.display ="block";
+>>>>>>> parent of de627bf... updated website
 });
 
 close1.addEventListener('click', function (){
