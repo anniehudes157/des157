@@ -1,6 +1,5 @@
 'use strict';
 
-alert("This experience is only compatible on a larger screen (1920x1080). Sorry for the inconvenience!");
 var bgSound = new Audio('sound/sad.mp3');
 
 var box=document.getElementById("box");
