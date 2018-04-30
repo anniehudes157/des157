@@ -564,13 +564,17 @@ select {
 }
 
 #page11 {
-  width: 1350px;
-  padding: 30px;
+  width: 1400px;
   padding-top: 15%;
   padding-left: 40%;
   text-align: left;
   font-size: 25px;
   line-height: 60px;
+}
+
+#page11 p:first-child {
+  text-align: left;
+  padding-left: 120px;
 }
 
 #page13-1, #page14, #page16 {
