@@ -124,13 +124,13 @@ ul, ol, li {
   opacity: 0.5;
 }
 
-#page2-1 {
+#page3 {
   padding-top: 24%;
   padding-left: 3%;
   text-align: center;
 }
 
-#page2-1 .previous, #page2-1 .next {
+#page3 .previous, #page3 .next {
   animation-name: hide, fadeInUp, UpDown;
   animation-duration: 2s, 1s, 3s;
   animation-delay: 0s, 2s, 1s;
@@ -142,7 +142,7 @@ ul, ol, li {
   animation-duration: 2s;
 }
 
-#page3 {
+#page4 {
   width: 1250px;
   text-align: center;
   padding-left: 37%;
@@ -264,7 +264,7 @@ input[type=text]:focus {
   z-index: 1;
 }
 
-#page4, #page4-1 {
+#page5, #page6 {
   font-size: 35px;
   line-height: 60px;
   width: 1640px;
@@ -279,7 +279,7 @@ input[type=text]:focus {
   text-align: center;
 }
 
-#page4-1 {
+#page6 {
   text-align: center;
   padding-top: 20%;
 }
@@ -325,10 +325,6 @@ input[type=text]:focus {
   cursor: pointer;
 }
 
-#page5 {
-  animation: none;
-}
-
 .characterIntro {
   position: fixed;
   left: 19%;
@@ -366,18 +362,30 @@ input[type=text]:focus {
 #about1, #about2, #about3 {
   position: fixed;
   left: 5%;
-  bottom: 15%;
-  width: 460px;
+  bottom: 17%;
+  width: 480px;
   background: rgba(255,255,255,0.8);
   border-radius: 10px;
-  padding: 30px;
+  padding: 20px;
   text-align: left;
   color: #1f51a3;
   font-size: 25px;
   display: none;
+  line-height: 30px;
 
   animation-name: fadeInLeft;
   animation-duration: 1s;
+}
+
+#introClose1, #introClose2, #introClose3 {
+  position: absolute;
+  top:2%;
+  right: 2%;
+  font-size: 35px;
+}
+
+#introClose1:hover, #introClose2:hover, #introClose3:hover {
+  cursor: pointer;
 }
 
 .msg {
@@ -422,10 +430,10 @@ input[type=text]:focus {
   border-radius: 30px;
   position: absolute;
   top: 58%;
-  right: 17%;
+  right: 22%;
   padding: 10px;
   list-style-type: none;
-  width: 440px;
+  width: 320px;
   text-align: left;
   font-size: 25px;
   animation-name: fadeInRight;
@@ -440,7 +448,7 @@ input[type=text]:focus {
   transition-duration: 0.5s;
 }
 
-.choices li:hover {
+.choices li:hover{
   transition-duration: 0.5s;
   background-color: white;
 }
@@ -449,7 +457,7 @@ input[type=text]:focus {
   color: #459ff3;
 }
 
-#page8 {
+#page10 {
   width: 1550px;
   padding-left: 21%;
   padding-top: 14%;
@@ -458,17 +466,17 @@ input[type=text]:focus {
   font-size: 35px;
 }
 
-#page8 .tips {
+#page10 .tips {
   margin-left: 2%;
 }
 
-#page9 {
+#page11 {
   padding-top: 15%;
   padding-left: 6%;
   font-size: 30px;
 }
 
-#page9 ul {
+#page11 ul {
   width: 500px;
   font-size: 25px;
   border-radius: 30px;
@@ -479,7 +487,11 @@ input[type=text]:focus {
   animation-duration: 1.5s;
 }
 
-#page9 li {
+#page11 p {
+    line-height: 25px;
+}
+
+#page11 li {
   list-style-type: none;
   border-radius: 30px;
   border: solid white;
@@ -488,15 +500,15 @@ input[type=text]:focus {
   opacity: 0.5;
 }
 
-#page9 li:first-child {
+#page11 li:first-child {
   opacity: 1;
 }
 
-#page9 li:first-child:hover {
+#page11 li:first-child:hover {
   background: white;
 }
 
-#page9 li a:hover {
+#page11 li a:hover {
   color: #459ff3;
 }
 
@@ -610,7 +622,7 @@ input[type=text]:focus {
   opacity: 0.5;
 }
 
-#page11 {
+#page12 {
   width: 1400px;
   padding-top: 17%;
   padding-left: 27%;
@@ -619,11 +631,11 @@ input[type=text]:focus {
   line-height: 60px;
 }
 
-#page11 .tips {
+#page12 .tips {
   margin-left: 4%;
 }
 
-#page13-1, #page14, #page16 {
+#page13, #page14, #page16 {
   font-size: 30px;
   width: 1380px;
   padding-left: 34%;

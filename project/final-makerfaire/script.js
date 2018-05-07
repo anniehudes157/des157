@@ -21,6 +21,9 @@ var close5 =document.getElementById("close5");
 var close6 =document.getElementById("close6");
 var close7 =document.getElementById("close7");
 
+var introClose1 =document.getElementById("introClose1");
+var introClose2 =document.getElementById("introClose2");
+var introClose3 =document.getElementById("introClose3");
 
 var msg1 =document.getElementById("msg1");
 var msg2 =document.getElementById("msg2");
@@ -46,8 +49,24 @@ question1.addEventListener('click', function(){
   about1.style.display="block";
 });
 
+question2.addEventListener('click', function(){
+  about2.style.display="block";
+});
+
 question3.addEventListener('click', function(){
   about3.style.display="block";
+});
+
+introClose1.addEventListener('click', function(){
+  about1.style.display="none";
+});
+
+introClose2.addEventListener('click', function(){
+  about2.style.display="none";
+});
+
+introClose3.addEventListener('click', function(){
+  about3.style.display="none";
 });
 
 //closing overlays

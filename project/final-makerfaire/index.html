@@ -3,40 +3,342 @@
 
 <head>
   <meta charset="utf-8">
-  <title>An Eldernary Day - Intro </title>
+  <title>An Eldernary Day</title>
   <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Oxygen%7cQuicksand" rel="stylesheet">
   <link href="styles.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@code-dot-org/p5.play@1.2.0-cdo/lib/p5.play.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.js"></script>
 </head>
 
-<body id="homePage">
+<body id="experiencePage">
+
   <nav id="topNav">
-    <a href="index.html">Introduction</a>
+    <a href="#page1">Introduction</a>
     <span>// </span>
-    <a href="experience.html">Story</a>
+    <a href="#page3">Story</a>
     <span>// </span>
-    <a href="about.html">About</a>
+    <a href="#aboutPage">About</a>
   </nav>
 
   <section class="pages" id="page1">
     <h6>Hide</h6>
     <p>What is it like...to be old?</p>
   <div class="nextIntro">
-    <a href="#page2">I'm curious<br><img src="images/arrowDown.png" alt="next arrow" width="60"></a>
+    <a href="#page2">I'm curious<br><img src="images/arrowDown.png" alt="next arrow" width="40"></a>
   </div>
   </section>
 
   <section class="pages" id="page2">
     <h6>Hide</h6>
-    <p>Experience the daily life of an elderly. <br> You will go through a day as a senior.<br><br> Are you ready for a new perspective? </p>
+    <p>Experience the daily life of an elderly. <br><br> Are you ready for a new perspective? </p>
+    <a href="#page1"><img src="images/arrowUp.png" alt="up arrow" width="40" id="page2previous" ></a>
     <div class="nextIntro">
-    <a href="experience.html">Yes, I am<br><img src="images/arrowDown.png" alt="next arrow" width="60"></a>
+    <a href="#page3">Yes, I am<br><img src="images/arrowDown.png" alt="next arrow" width="40"></a>
     </div>
   </section>
 
+  <section class="pages" id="page3">
+    <h6>Hide</h6>
+    <img src="images/logo.png" alt="title" width="700" id="storyname">
+    <a href="#page2"><img src="images/arrowUp.png" alt="up arrow" width="40" class="previous" ></a>
+    <a href="#page4"><img src="images/arrowDown.png" alt="down arrow" width="40" class="next"></a>
+  </section>
+
+  <section class="pages" id="page4">
+    <h6>Hide</h6>
+    <form name="f" id="form">
+      <div>
+        <p>What is your first name?</p>
+        <label for="userName"></label>
+        <input type="text" name="userName" id="userName" required>
+      </div>
+      <!--<a href="#page4"><input type="submit" class="center-button" id="submit" value="I'm ready" />-->
+      <div>
+        <input type="submit" id="submit" value="Submit" />
+        <input type="reset" id="reset" value="Choose for me" />
+      </div>
+    </form>
+
+  <div id="box">
+    <p>Your character has the following information:</p>
+    <img src="images/id_blank.png" width="700" alt="old lady id" id="userPic">
+    <p id="boxWords">Hello</p>
+    <span id="close1">&otimes;</span>
+  </div>
+    <a href="#page3"><img src="images/arrowUp.png" alt="up arrow" width="40" class="previous" ></a>
+    <a href="#page5"><img src="images/arrowDown.png" alt="down arrow" width="40" class="next" id="submitForm"></a>
+  </section>
+
+  <section class="pages" id="page5">
+    <h6>Hide</h6>
+      <p class="time">6:00AM</p>
+      <p>I woke up. I tried to go back to sleep, but I couldn't.</p>
+    <aside class="tips" id="tip1">
+      <p>Another Perspective</p>
+      <p>As we grow older, we tend to get less sleep due to the decreased production of chemicals such as melatonin.</p>
+    </aside>
+    <a href="#page4"><img src="images/arrowUp.png" alt="up arrow" width="40" class="previous" ></a>
+    <a href="#page6"><img src="images/arrowDown.png" alt="down arrow" width="40" class="next" ></a>
+  </section>
+
+  <section class="pages" id="page6">
+    <h6>Hide</h6>
+      <p class="time">7:00AM</p>
+      <p>I hear a knock at my bedroom door.</p>
+    <a href="#page5"><img src="images/arrowUp.png" alt="up arrow" width="40" class="previous" ></a>
+    <a href="#page7"><img src="images/arrowDown.png" alt="down arrow" width="40" class="next" ></a>
+  </section>
+
+  <section class="pages" id="page7">
+    <h6>Hide</h6>
+    <div class="characterIntro">
+      <img src="images/christineNormal.png" alt="woman smiling" class="characterImg" width="800">
+    </div>
+    <div class="characterTitle">
+      <p class="name"><strong>Christine</strong></p>
+      <img src="images/question.png" alt="question button" class=q-button id="question1" width="40">
+      <p class="title"></p>
+    </div>
+    <div id="about1">
+    <p>Christine is your daughter-in-law. She now lives with you, your son, and your two grandchildren. She has a job as a certified accountant.</p>
+    <span id="introClose1">&otimes;</span>
+    </div>
+    <div class="dialogue">
+        <p class="msg" id="msg1">Good morning Emily!</p>
+      </div>
+
+      <a href="#page6"><img src="images/arrowUp.png" alt="up arrow" width="40" class="previous" ></a>
+        <p class="reply">Please choose a reply:</p>
+      <ul class="choices">
+        <li><a href="#page8" id="choice1a">Hey, Christine.</a></li>
+        <li><a href="#page8" id="choice1b">Hi, how are you?</a></li>
+      </ul>
+  </section>
+
+  <section class="pages" id="page8">
+    <h6>Hide</h6>
+    <div class="characterIntro">
+      <img src="images/christineNormal.png" alt="woman smiling" class="characterImg" width="800">
+    </div>
+    <div class="characterTitle">
+      <p class="name"><strong>Christine</strong></p>
+      <img src="images/question.png" alt="question button" class=q-button id="question2" width="40">
+      <p class="title"></p>
+    </div>
+    <div id="about2">
+    <p>Christine is your daughter-in-law. She now lives with you, your son, and your two grandchildren. She has a job as a certified accountant.</p>
+    <span id="introClose2">&otimes;</span>
+    </div>
+      <div class="dialogue">
+        <p class="msg" id="msg2">I'm off to take the kids to school and go to work now. See you later!</p>
+      </div>
+        <p class="reply">Please choose a reply:</p>
+      <ul class="choices">
+        <li><a href="#page9" id="choice2a">Okay, see you.</a></li>
+        <li><a href="#page9" id="choice2b">Alright, take care.</a></li>
+      </ul>
+    <a href="#page7"><img src="images/arrowUp.png" alt="up arrow" width="40" class="previous" ></a>
+  </section>
+
+  <section class="pages" id="page9">
+    <h6>Hide</h6>
+    <div class="characterIntro">
+      <img src="images/steveNormal.png" alt="man smiling" class="characterImg" width="800">
+    </div>
+    <div class="characterTitle">
+      <p class="name"><strong>Steve</strong></p>
+      <img src="images/question.png" alt="question button" class=q-button id="question3" width="40">
+      <p class="title"></p>
+    </div>
+    <div id="about3">
+    <p>Steve is your son. Like Christine, he is also living with you. He is a software engineer.</p>
+    <span id="introClose3">&otimes;</span>
+    </div>
+
+      <div class="dialogue">
+        <p class="msg" id="msg3">Hey mom, I'm off to work now. See you!</p>
+      </div>
+        <p class="reply">Please choose a reply:</p>
+      <ul class="choices">
+        <li><a href="#page10" id="choice3a">I'll see you.</a></li>
+        <li><a href="#page10" id="choice3b">See you later, son.</a></li>
+      </ul>
+    <a href="#page8"><img src="images/arrowUp.png" alt="up arrow" width="40" class="previous" ></a>
+  </section>
+
+  <section class="pages" id="page10">
+    <h6>Hide</h6>
+    <div>
+      <p class="time">7:30AM</p>
+      <p>My family left for work and school. </p>
+      <p>I should look for things to do to pass my time.</p>
+    </div>
+    <aside class="tips" id="tip2">
+      <p>Another Perspective</p>
+      <p>As we grow old and our physical health decline, we find less reasons to go out. Feelings of being a burden may contribute to this as well.</p>
+    </aside>
+    <a href="#page9"><img src="images/arrowUp.png" alt="up arrow" width="40" class="previous" ></a>
+    <a href="#page11"><img src="images/arrowDown.png" alt="down arrow" width="40" class="next" ></a>
+  </section>
+
+  <section class="pages" id="page11">
+    <h6>Hide</h6>
+    <img src="images/room.png" alt="room view" width=1600 id="roomView">
+    <div class="objects">
+      <img src="images/breakfast1.png" alt="nutritious breakfast" width="150" id="breakfast">
+      <img src="images/photobook1.png" alt="photo album" width="200" id="photobook">
+      <img src="images/stickyNotes1.png" alt="sticky notes" width="130" id="stickynote">
+      <img src="images/radio1.png" alt="radio" width="100" id="radio">
+      <img src="images/yarn1.png" alt="ball of yarn" width="100" id="yarn">
+      <img src="images/photo1.png" alt="framed photo" width="80" id="photo">
+    </div>
+
+    <div id="breakfastTip" class="roomTip">
+      <img src="images/breakfast2.png" alt="nutritious breakfast" width="250">
+      <p>Breakfast that Christine makes for me. Contains oatmeal, toast, and orange juice.</p>
+      <p><em>As you grow older, your digestive system slows down and your teeth become more sensitive.</em></p>
+      <span id="close2" class="close">&otimes;</span>
+    </div>
+
+    <div id="photobookTip" class="roomTip">
+      <img src="images/photobook2.png" alt="photo album" width="240">
+      <p>My photo album. It has photos of my family and my friend, who passed.</p>
+      <p><em>As you grow old, so do your memories. Many elders tend to look back to the past for a sense of nostalgia.</em></p>
+      <span id="close3" class="close">&otimes;</span>
+    </div>
+
+    <div id="stickynotesTip" class="roomTip">
+      <img src="images/stickynotes2.png" alt="stickie notes on window" width="180">
+      <p><br>Notes Christine wrote for me. I check them daily to help me remember.</p>
+      <p><em>Over 16 million people aged 65 or older have age associated memory impairment. </em></p>
+      <span id="close4" class="close">&otimes;</span>
+    </div>
+
+    <div id="radioTip" class="roomTip">
+      <img src="images/radio2.png" alt="radio" width="220">
+      <p><br>Sometimes I like to listen to the radio for some nostalgia.</p>
+      <p><em>Elders typically enjoy songs from when they were more involved with music.</em></p>
+      <span id="close5" class="close">&otimes;</span>
+    </div>
+
+    <div id="yarnTip" class="roomTip">
+      <img src="images/yarn2.png" alt="ball of yarn" width="180">
+      <p><br>Knitting helps me get through the day faster.</p>
+      <p><em>Hobbies such as knitting are common amongst elders due to the time they take up.</em><br><br></p>
+      <span id="close6" class="close">&otimes;</span>
+    </div>
+
+    <div id="photoTip" class="roomTip">
+      <img src="images/photo2.png" alt="framed photo" width="180">
+      <p>This is a photo of my husband and I. He passed away a year ago from lung cancer.</p>
+      <p><em>Cancer is one of the common yet lethal health issues that elders experience.</em><br><br></p>
+      <span id="close7" class="close">&otimes;</span>
+    </div>
+    <span id="reminder">You are now in your bedroom. Click around to explore.</span>
+    <a href="#page10"><img src="images/arrowUp.png" alt="up arrow" width="40" class="previous" ></a>
+    <a href="#page12"><img src="images/arrowDown.png" alt="down arrow" width="40" class="next" ></a>
+  </section>
+
+  <section class="pages" id="page12">
+    <h6>Hide</h6>
+    <div>
+      <p class="time">6:00PM</p>
+      <p>Christine, Steve, and the kids returned from home.</p>
+    </div>
+    <aside class="tips" id="tip4">
+      <p>Another Perspective</p>
+      <p>Not all elders have the chance to live with their family. Studies show 28% of US seniors claim to live by themselves.</p>
+    </aside>
+    <a href="#page11"><img src="images/arrowUp.png" alt="up arrow" width="40" class="previous" ></a>
+    <a href="#page13"><img src="images/arrowDown.png" alt="down arrow" width="40" class="next" ></a>
+  </section>
+
+  <section class="pages" id="page13">
+    <h6>Hide</h6>
+    <div>
+      <p>They all go on to do their own tasks.<br> I want to talk to them, but they seem really busy.</p>
+    </div>
+    <a href="#page12"><img src="images/arrowUp.png" alt="up arrow" width="40" class="previous" ></a>
+    <a href="#page14"><img src="images/arrowDown.png" alt="down arrow" width="40" class="next" ></a>
+  </section>
+
+  <section class="pages" id="page14">
+    <h6>Hide</h6>
+    <div>
+      <p>Sometimes I wonder if I'm a bother to them. <br> I'm wondering if I should move to a senior housing.</p>
+    </div>
+    <a href="#page13"><img src="images/arrowUp.png" alt="up arrow" width="40" class="previous" ></a>
+    <a href="#page15"><img src="images/arrowDown.png" alt="down arrow" width="40" class="next" ></a>
+  </section>
+
+  <section class="pages" id="page15">
+    <h6>Hide</h6>
+    <div>
+      <p class="time">10:00PM</p>
+      <p>It's getting late. I decided to get some sleep.<br><br><br>Looks like tomorrow will just be another <em>regular day</em>.</p>
+    </div>
+    <a href="#page14"><img src="images/arrowUp.png" alt="up arrow" width="40" class="previous" ></a>
+    <a href="#page16"><img src="images/arrowDown.png" alt="down arrow" width="40" class="next" ></a>
+  </section>
+
+
+  <section class="pages" id="page16">
+    <h6>Hide</h6>
+    <div>
+      <p>Being alone can be challenging.<br>Yet, this is what seniors face everyday.</p>
+      <p id="stop">But you can stop this from <em>happening.</em></p>
+      <a href="#aboutPage" id="go-to-about">Stop the Loneliness</a>
+    </div>
+    <a href="#page15"><img src="images/arrowUp.png" alt="up arrow" width="40" class="previous" ></a>
+  </section>
+
+  <!--about page-->
+  <section class="pages" id="aboutPage">
+    <article>
+      <h1>About</h1>
+    <section id="aboutIntro">
+      <h6>Hide</h6>
+      <p><em><a href="index.html#page1">An Elder-nary Day</a></em> is an interactive and immersive visual story that serves to provide understanding on the physical and mental health of elders. The story utilizes a first-person perspective, hoping for the user to feel empathy for the problems
+        elders face everyday.</p>
+      <p>On average, an elder spents 64 percent of the day alone. This can lead to feelings of loneliness, which is one of the major risk factors of mental health problems in elders. By 2050, 180 million to 400 million elders will be suffereing from mental health issues.</p>
+      <p class="emphasis">So why isn’t this something that we think about?</p>
+    </section>
+
+    <section id="aboutSolution">
+      <h6>Hide</h6>
+      <p class="emphasis">Solving this problem isn't as hard as you think.</p>
+      <p>These simple actions can help reduce the loneliness of the elders you love:</p>
+      <ul>
+        <li>Spend time with them.</li>
+        <li>Hold sincere conversations with them.</li>
+        <li>Let them know that they're loved.</li>
+      </ul>
+      <p>For more information on the mental health of elders, visit:</p>
+      <ul>
+        <li><a href="http://www.who.int/mediacentre/factsheets/fs381/en/" target="_blank" >World Health Organization</a></li>
+        <li><a href="https://www.ncoa.org/" target="_blank" >National Council on Aging</a></li>
+      </ul>
+      <p>You can also support by donating to a foundation that puts the elders' mental health first:</p>
+      <ul>
+        <li><a href="http://www.gmhfonline.org/" target="_blank" >Geriatric Mental Health Foundation</a></li>
+      </ul>
+    </section>
+  </article>
+  <a href="#page16"><img src="images/arrowUp.png" alt="up arrow" width="40" class="previous" ></a>
+  </section>
+
+  <footer>
+      <img src="images/logo.png" alt="game title" id="logo" width="300">
+    <ul id="music">
+      <li><img src="images/start.png" alt="start music" width="18" id="start"></li>
+      <li><img src="images/pause.png" alt="pause music" width="20" id="pause"></li>
+    </ul>
+  </footer>
+
   <script src="script.js"></script>
+  <!--<script src="room.js"></script>-->
 </body>
 
 </html>
