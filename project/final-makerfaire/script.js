@@ -1,5 +1,6 @@
 'use strict';
-var bgSound = new Audio('sound/sad.mp3');
+var bgSound = new Audio('sound/sad.mp3');;
+
 var start=document.getElementById("start");
 var pause=document.getElementById("pause");
 
@@ -43,7 +44,6 @@ document.f.onsubmit = processForm;
 document.f.onreset = resetForm;
 
 bgSound.loop = true;
-bgSound.play();
 
 question1.addEventListener('click', function(){
   about1.style.display="block";
@@ -177,7 +177,6 @@ function resetForm() {
 }
 
 function processForm() {
-
   var userName = document.f.userName.value;
 
   box.style.display="block";
@@ -192,6 +191,10 @@ function processForm() {
 
 
 //music
+submitForm.addEventListener('click', function(){
+  bgSound.play();
+});
+
 start.addEventListener('click', function(){
   bgSound.play();
 });

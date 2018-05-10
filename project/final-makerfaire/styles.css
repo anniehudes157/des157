@@ -235,6 +235,7 @@ input[type=text]:focus {
   text-align: center;
   font-size: 30px;
   margin-top: 90px;
+  margin-bottom: 430px;
 }
 
 #box p {
