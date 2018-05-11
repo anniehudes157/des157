@@ -964,10 +964,10 @@ input[type=text]:focus {
  list-style-type: none;
  bottom: 3%;
  right: 2%;
- opacity: 0.5;
+ opacity: 0.7; 
 }
 #start {
-  right: 4%;
+  right: 5%;
 }
 
 #start:hover, #pause:hover {
